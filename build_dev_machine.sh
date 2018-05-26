@@ -20,7 +20,7 @@ apt-get install -y vim
 apt-get install -y fonts-droid-fallback fonts-noto fonts-noto-mono
 wget -O get-pip.py 'https://bootstrap.pypa.io/get-pip.py'
 python get-pip.py --disable-pip-version-check --no-cache-dir
-pip install virtualenvwrapper
+pip install virtualenvwrapper pipenv
 snap install vscode --classic
 snap install slack --classic
 snap install atom --classic
