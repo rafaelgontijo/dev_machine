@@ -45,6 +45,6 @@ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flat
 apt-get autoremove --purge -y
 apt-get autoclean -y
 apt-get clean -y
+curl -L https://github.com/docker/compose/releases/download/1.21.2/docker-compose-$(uname -s)-$(uname -m) -o /usr/local/bin/docker-compose
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-cp -f .zshrc ~/.zshrc
 echo "Restart your machine" 1>&2
