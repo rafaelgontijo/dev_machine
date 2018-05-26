@@ -15,11 +15,12 @@ apt-get install -y --no-install-recommends autoconf automake bzip2 dpkg-dev file
 apt-get install -y postgresql
 apt-get install -y mysql-server
 apt-get install -y redis-server
-apt-get install -y nodejs nodejs-legacy npm
+apt-get install -y nodejs npm
 apt-get install -y vim
 apt-get install -y fonts-droid-fallback fonts-noto fonts-noto-mono
 apt-get install -y flatpak
 apt-get install -y zsh
+apt-get install -y docker.io
 wget -O get-pip.py 'https://bootstrap.pypa.io/get-pip.py'
 python get-pip.py --disable-pip-version-check --no-cache-dir
 pip install virtualenvwrapper pipenv
@@ -31,11 +32,8 @@ wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 apt install -y ./google-chrome-stable_current_amd64.deb
 wget https://dbeaver.io/files/dbeaver-ce_latest_amd64.deb
 apt install -y ./dbeaver-ce_latest_amd64.deb
-curl -fsSL get.docker.com -o get-docker.sh
-sh get-docker.sh
 usermod -aG docker $(whoami)
 rm -f get-pip.py
-rm -f get-docker.sh
 rm -f google-chrome-stable_current_amd64.deb
 rm -f dbeaver-ce_latest_amd64.deb
 npm install gulp-cli -g
