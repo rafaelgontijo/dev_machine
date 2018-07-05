@@ -2,7 +2,7 @@
 
 # Make sure only root can run our script
 if [ "$(id -u)" != "0" ]; then
-   echo "This script must be run as root" 1>&2
+   echo "Este script tem que ser rodado com sudo" 1>&2
    exit 1
 fi
 
@@ -46,4 +46,4 @@ apt-get autoclean -y
 apt-get clean -y
 curl -L https://github.com/docker/compose/releases/download/1.21.2/docker-compose-$(uname -s)-$(uname -m) -o /usr/local/bin/docker-compose
 chmod +x /usr/local/bin/docker-compose
-echo "Restart your machine" 1>&2
+echo "Finalizado." 1>&2
