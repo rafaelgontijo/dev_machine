@@ -6,6 +6,7 @@ wget -O dev_machine.zip https://github.com/rafaelgontijo/dev_machine/archive/mas
 unzip dev_machine.zip
 cd dev_machine-master
 sudo ./build_dev_machine.sh
+sudo usermod -aG docker $(whoami)
 ```
 
 Caso vc queira mudar o shell para o zsh com oh-my-zsh:
