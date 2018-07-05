@@ -32,7 +32,6 @@ wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 apt install -y ./google-chrome-stable_current_amd64.deb
 wget https://dbeaver.io/files/dbeaver-ce_latest_amd64.deb
 apt install -y ./dbeaver-ce_latest_amd64.deb
-usermod -aG docker $(whoami)
 rm -f get-pip.py
 rm -f google-chrome-stable_current_amd64.deb
 rm -f dbeaver-ce_latest_amd64.deb
